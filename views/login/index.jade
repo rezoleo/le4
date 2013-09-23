@@ -1,0 +1,15 @@
+doctype 5
+html
+  head
+    meta(charset="utf-8")
+    link(href="/css/login.css", rel="stylesheet")
+    link(href="/css/bootstrap.css", rel="stylesheet")
+    link(href="/css/bootstrap-responsive.css", rel="stylesheet")
+  body
+    .container
+      form(action="/auth/login",method="post").form-signin
+        h2.form-signin-heading Please sign in
+        input.input-block-level(type='text', name='username', placeholder='Login')
+        input.input-block-level(type='password', name='password', placeholder='Password')
+        button.btn.btn-large.btn-primary(type='submit') Log In
+

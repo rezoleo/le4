@@ -1,0 +1,22 @@
+.row-fluid
+	.span3
+		img.img-polaroid(src="{{img}}")
+	.span4
+		h3 {{last_name}} {{first_name}}
+		p Chambre: {{room.name}}
+		p Ajouté le: {{date_added}}
+	.row-fluid
+		h4 Machines:
+		table.table.table-hover
+			thead
+				tr
+					th Name
+					th Alias
+					th IP
+					th Mac
+					th Date ajout
+					th Type
+					th Action
+			tbody
+				tr
+					td(colspan="7")

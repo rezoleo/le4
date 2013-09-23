@@ -1,0 +1,17 @@
+.modal-header
+	button.close(data-dismiss="modal", aria-hidden="true") X
+	h3 Machine edition
+.modal-body
+	form
+		fieldset
+			label Mac
+				input#modal_machine_mac(type="text", required="true", pattern="^(?:[0-9a-fA-F]{2}[-: ,;.]?){6}$")
+			label Type
+				select#modal_machine_type
+					option(value="PC") PC
+					option(value="AP") AP
+			label Alias
+				input#modal_machine_alias(type="text")
+.modal-footer
+	button#modal_machine_save.btn.btn-primary Save changes
+	button#modal_machine_destroy.btn.btn-danger Delete
